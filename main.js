@@ -15,7 +15,7 @@
 // 1. Create a function that simply returns a string that says something funny
 //    when it is called and then displayed into the HTML page.
 function funny() {
-  document.getElementById("q1").innerHTML = "whats up man!";
+  document.getElementById("q1").innerHTML = "I am not comedian lol!";
 };
 
 funny();
@@ -29,9 +29,24 @@ funny();
 
 
 
+function divideByTwo(number/2) {
+
+  return number/2;
+ document.getElementById("q2").innerHTML +=addEventListener("click", function()
+          name(divideByTwo);
+        });
+
 // 3. Define a function called "greeting".
 //    It should accept two parameters within input fields, which will both be first names.
 //    The function should display to the HTML page a greeting to both people.
+function greeting(person) {
+  document.getElementById("message").innerHTML += "<p>Hello " + person + "</p>";
+};
+
+// Now let's greet some instructors...
+greeting("Barack");
+greeting("Obama");
+
 
 
 
@@ -44,7 +59,12 @@ funny();
 // 5. You use Amazon Subscribe & Save to have six cans of cashews automatically sent to you each month.
 //    Write a function that takes the price per unit and calculates the total for you each month.
 //    Since the price of the cashews can change anytime, pass that amount into the function to get your total price.
-
+function calculateTotal(price,amount){
+  var total = price*amount;
+  returntotal;
+}
+calculate Total(5,35,10);
+document.getElementById('q5').innerHTML= returntotal;
 
 
 
