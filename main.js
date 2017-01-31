@@ -27,28 +27,23 @@ funny();
 //    The function should divide the number by two and
 //    then displayed into the HTML page.
 
+var divideByTwo = function(number){
+	return (number/2);
+};
+document.getElementById('q2').innerHTML = divideByTwo(8);
 
 
-function divideByTwo(number/2) {
-
-  return number/2;
- document.getElementById("q2").innerHTML +=addEventListener("click", function()
-          name(divideByTwo);
-        });
 
 // 3. Define a function called "greeting".
 //    It should accept two parameters within input fields, which will both be first names.
-//    The function should display to the HTML page a greeting to both people.
-function greeting(person) {
-  document.getElementById("message").innerHTML += "<p>Hello " + person + "</p>";
+var greeting = function (name){
+	document.getElementById('q3').innerHTML = ("Hello " + name + "!");
 };
+var name = "Carolyn";
+var name2 = "Frances";
 
-// Now let's greet some instructors...
-greeting("Barack");
-greeting("Obama");
-
-
-
+greeting(name);
+greeting(name2);
 
 // 4. Create a function that finds the average of 6 numbers passed in when called
 //    and returns the value and is then displayed in the HTML page.
@@ -60,22 +55,36 @@ greeting("Obama");
 //    Write a function that takes the price per unit and calculates the total for you each month.
 //    Since the price of the cashews can change anytime, pass that amount into the function to get your total price.
 function calculateTotal(price,amount){
-  var total = price*amount;
-  returntotal;
+   returntotal = price*amount;
 }
-calculate Total(5,35,10);
+calculateTotal(5,35,10);
 document.getElementById('q5').innerHTML= returntotal;
 
 
 
 // 6. Define functions called "area" and "perimeter". They should both accept two parameters and calculate the area and perimeter of a rectangle.
 
+var areaRectangle = function (length, width){
+	return length*width;
+};
+
+document.getElementById('q6').innerHTML = (areaRectangle (4,2));
+
+var perimeterRectangle = function (length, width){
+	return ((length*2) + (width*2));
+};
+document.getElementById('q6').innerHTML = (perimeterRectangle (4,2));
 
 
 
 
 // 7. Define a function called "quarter". It accepts one parameter called "number".
 //    The function will return a value which is one quarter of the number provided.
+var quarter = function(number){
+	return number/4;
+};
+
+document.getElementById('q7').innerHTML = quarter (16);
 
 
 
@@ -85,12 +94,30 @@ document.getElementById('q5').innerHTML= returntotal;
 //    Write a conditional statement inside of the function. If the number of hours is more than 8, display a statement to the HTML page about getting enough rest.
 //    If the number of hours is less than 8, print a statement recommending the user get more shut eye.
 
+var sleepings = function(hours){
+	if (hours > 8){
+	return "You should feel well rested.";
+	} else {
+		return "You should start going to bed a little earlier.";
+	}
+};
 
+sleepings (7);
 
-
+document.getElementById('q8').innerHTML = sleepings (12);
 
 // 9. Develop a function that determines a person's age by asking them for their birth year.
+function getAge(){
+	var birthYear = prompt('What year were you born?');
+	birthYear = parseInt(birthYear);
+	var age = (2016 - birthYear);
 
+
+
+}
+
+getAge();
+documnet.getElementById('q9').innerHTML = getAge();
 
 
 
@@ -100,13 +127,20 @@ document.getElementById('q5').innerHTML= returntotal;
      teammates = ["Harold", "Bob", "Sue", "Grady", "Notorious B.I.G.", "JavaCrypt", "Weird guy in the back", "Gary", "Carol", "Hipster Tim", "Janet"]
 
 
-
+document.getElementById('q10').innerHTML
 
 // 11. Allow a user to enter a three digit number.
 //     Write a function that adds the numbers together.
 //     Hint #1: You need to turn a string into an integer.
 //     Hint #2: Strings can be treated as arrays too.
 
+var user = prompt ("Please enter a three digit number");
+	console.log(user);
+
+function addDigits(str){
+	return (str[0] + str[1] + str[2]);
+}
+documnet.getElementById('q11').innerHTML
 
 
 
@@ -116,6 +150,12 @@ document.getElementById('q5').innerHTML= returntotal;
 //     The function should take each number of coins and multiply it times each coin's value.
 //     Finally, it should return the total amount of change you have in the following format: "$32.77"
 //     HINT: Understanding the toFixed method will help you with the format.
+
+var piggyBank = function piggyBank(quarters, dimes, nickels, pennies){
+	return ((quarters * 0.25) + (dimes * 0.10) + (nickels * 0.05) + (pennies * 0.01)).toFixed(2);
+};
+
+document.getElementById('q16').innerHTML = piggyBank(3, 4, 5, 6);
 
 
 
@@ -170,6 +210,3 @@ document.getElementById('q5').innerHTML= returntotal;
 //        Except every year that is evenly divisible by 100
 //        Unless the year is also evenly divisible by 400
 //        For example, 1997 is not a leap year, but 1996 is. 1900 is not a leapyear, but 2000 is.
-
-
-console.log = ("5")
